@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/lightBlue"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+
+    <!-- {COLOCA AQUI EL CONTENIDO DEL LAYOUT} -->
+
+<!-- View en un archivo layout en lenguaje xml -->
+
+    <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_text"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/lightGrey"
+    />
+    <Button
+            android:id="@+id/btnAccept"
+            android:background="@color/mexicanPink"
+            android:text="@string/accept_button"
+            android:textColor="@color/lightGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="48dp"/>
+
+</LinearLayout>
+
+<!-- Cambiar de color de lo siguientes elementos:
+-El background del layout en un tono azul claro
+-Las letras del TextView y Button color gris claro (Usar el atributo textColor)
+
+2. El contenido de un button es su texto, Aumentar el espacio del boton en 8dp verticalmente y 16dp horizontalmente
+
+3. Cuando el usuario pulse el boton, este debe deshabilitarse (atributo enabled tipo booleado) y el texto debe hacerse
+invisible (atributo visibility con valores Viwe.VISIBLE, View.INVISIBLE y View,GONE)-->
